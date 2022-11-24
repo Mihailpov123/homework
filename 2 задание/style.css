@@ -1,0 +1,56 @@
+body {
+    width: 204px;
+}
+
+p {
+    margin-left: 20px;
+}
+
+.poetry > p {
+    position: relative;
+}
+
+.poetry > p::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -20px;
+}
+
+
+.poetry > p:nth-child(1)::before {
+    content: "1-";
+}
+
+.poetry > p:nth-child(2)::before {
+    content: "2-";
+}
+
+.poetry > p:nth-child(3)::before {
+    content: "3-";
+}
+
+.poetry > p:nth-child(4)::before {
+    content: "4-";
+}
+
+.poetry > p:nth-child(5)::before {
+    content: "5-";
+}
+
+.poetry > p:nth-child(6)::before {
+    content: "6-";
+}
+
+
+
+/* body {
+    counter-reset: geekov;
+}
+
+p:before {
+    counter-increment: geekov;
+    content: counter(geekov) "-";
+    font-weight: 700;
+    margin-right: 10px;
+} */
