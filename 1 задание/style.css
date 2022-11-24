@@ -1,0 +1,50 @@
+ul {
+    margin-left: 500px;
+    list-style: none;
+}
+
+ul> li {
+    position: relative;
+}
+
+ul> li::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+ul> li:nth-child(1)::before {
+    background-color: #FF0000;
+}
+
+ul> li:nth-child(2)::before {
+    background-color: #FFB800;
+}
+
+ul> li:nth-child(3)::before {
+    background-color: #FAFF00;
+}
+
+ul> li:nth-child(4)::before {
+    background-color: #52FF00;
+}
+ul> li:nth-child(5)::before {
+    background-color: #00FFF0;
+}
+
+ul> li:nth-child(6)::before {
+    background-color: #0029FF;
+}
+
+ul> li:nth-child(7)::before {
+    background-color: #7000FF;
+}
+
+
+li {
+    margin-bottom: 8px;
+}
